@@ -1,0 +1,33 @@
+{
+  "name": "es6-module-skeleton",
+  "version": "0.0.0",
+  "description": "es6-module-skeleton",
+  "repository": "git@github.com:sugarshin/es6-module-skeleton.git",
+  "main": "lib/es6-module-name.js",
+  "files": [
+    "lib",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "start": "babel src/es6-module-name.js -w -o lib/es6-module-name.js",
+    "pretest": "browserify -t babelify test/test.es6.js -o test/test.js",
+    "test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/index.html",
+    "build": "uglifyjs lib/es6-module-name.js -cm --wrap 'es6-module-skeleton' -o lib/es6-module-name.min.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": "sugarshin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "",
+    "babelify": "",
+    "browserify": "",
+    "mocha": "",
+    "mocha-phantomjs": "",
+    "phantomjs": "",
+    "power-assert": "",
+    "uglify-js": ""
+  }
+}
