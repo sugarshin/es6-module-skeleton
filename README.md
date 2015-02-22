@@ -50,8 +50,6 @@ options
 
 [Babel](//babeljs.io/)
 
-[Browserify](//browserify.org/)
-
 [mocha-phantomjs](//github.com/metaskills/mocha-phantomjs)
 
 [power-assert](//github.com/twada/power-assert)
