@@ -12,9 +12,9 @@
     "README.md"
   ],
   "scripts": {
-    "start": "babel src -w -o lib",
+    "start": "babel src/es6-module-skeleton.js -w -o lib/es6-module-skeleton.js",
     "test": "mochify -R spec --transform babelify --transform espowerify ./test/test.js",
-    "compile": "babel src -o lib",
+    "compile": "babel src/es6-module-skeleton.js -o lib/es6-module-skeleton.js",
     "build-standalone": "browserify src/es6-module-skeleton.js -t babelify -s ES6ModuleSkeleton | derequire > build/es6-module-skeleton.js",
     "build-min": "uglifyjs build/es6-module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/es6-module-skeleton.min.js",
     "build": "npm run compile && npm run build-standalone && npm run build-min"
