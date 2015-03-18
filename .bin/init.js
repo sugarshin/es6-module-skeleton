@@ -22,4 +22,4 @@ fs.readFile(pkgJSON, {encoding: 'utf-8'}, function(err, data) {
   }
 });
 
-fs.rename('./src/module-name.js', './src/' + args[2] + '.js');
+fs.rename('./src/es6-module-name.js', './src/' + args[2] + '.js');
