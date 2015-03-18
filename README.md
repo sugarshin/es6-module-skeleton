@@ -8,9 +8,10 @@
 
 initialize
 
-```
-node ./.bin/init
-rm -rf .bin .git
+```shell
+mkdir es6-module-name && cd $_
+git clone --depth 1 git@github.com:sugarshin/es6-module-skeleton.git .
+sh .bin/init.sh es6-module-name
 ```
 
 ---
@@ -24,7 +25,7 @@ rm -rf .bin .git
 ES6 Module skeleton
 
 ```shell
-npm i es6-module-skeleton
+npm i es6-module-name
 ```
 
 ## Usage
@@ -32,12 +33,12 @@ npm i es6-module-skeleton
 ```javascript
 import ModuleName from 'es6-module-name';
 
-new ModuleName;
+new ES6ModuleName(opts);
 ```
 
 ### Config
 
-options
+default options
 
 ```javascript
 // default
@@ -46,11 +47,19 @@ options
 }
 ```
 
+## api
+
+### `m.method()`
+
+Method
+
 ## Contributing
 
 [Babel](//babeljs.io/)
 
-[mocha-phantomjs](//github.com/metaskills/mocha-phantomjs)
+[Browserify](//browserify.org/)
+
+[Mocha](//mochajs.org/)
 
 [power-assert](//github.com/twada/power-assert)
 

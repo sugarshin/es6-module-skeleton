@@ -1,9 +1,14 @@
-"use strict"
+/*!
+ * @license es6-module-name
+ * (c) sugarshin
+ * License: MIT
+ */
 
-import dependencies from 'dependencies';
-import {Dependencies} from 'dependencies';
+"use strict";
 
-export default class ModuleName extends Dependencies {
+import deps from 'deps';
+
+export default class ModuleName {
   static classMethod() {
 
   }
@@ -17,6 +22,6 @@ export default class ModuleName extends Dependencies {
   }
 
   constructor(opts) {
-    
+
   }
 }
