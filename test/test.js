@@ -1,11 +1,12 @@
 import assert from 'power-assert';
 import deps from 'deps';
 
-import ModuleName from '../src/module-name';
+import ModuleName from '..';
 
-// .test()
-describe('.test()', () => {
-  it('test', () => {
-    assert(true);
+describe('ModuleName', () => {
+  describe('.test()', () => {
+    it('case', () => {
+      assert(true);
+    });
   });
 });

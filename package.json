@@ -14,8 +14,26 @@
     "package.json",
     "README.md"
   ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "rules": {
+      "strict": 0,
+      "quotes": [
+        1,
+        "single",
+        "avoid-escape"
+      ],
+      "no-underscore-dangle": 0,
+      "no-unused-vars": [
+        1
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
   "scripts": {
-    "start": "babel src/es6-module-skeleton.js -w -o lib/es6-module-skeleton.js",
     "lint": "eslint src/es6-module-skeleton.js",
     "test": "mocha --compilers js:espower-babel/guess test/**/*.js",
     "compile": "babel src/es6-module-skeleton.js -o lib/es6-module-skeleton.js",
