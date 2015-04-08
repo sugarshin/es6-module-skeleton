@@ -11,7 +11,7 @@ initialize
 ```shell
 mkdir es6-module-name && cd $_
 git clone --depth 1 git@github.com:sugarshin/es6-module-skeleton.git .
-sh .bin/init.sh es6-module-name
+sh .bin/init.sh module-name
 ```
 
 ---
@@ -24,23 +24,23 @@ sh .bin/init.sh es6-module-name
 
 ES6 Module skeleton
 
-```shell
-npm i es6-module-name
+```
+npm i module-name
 ```
 
 ## Usage
 
-```javascript
-import ModuleName from 'es6-module-name';
+```js
+import ModuleName from 'module-name';
 
-new ES6ModuleName(opts);
+new ModuleName(opts);
 ```
 
 ### Config
 
 default options
 
-```javascript
+```js
 // default
 {
   prop: 'val'
@@ -63,7 +63,7 @@ Method
 
 [power-assert](//github.com/twada/power-assert)
 
-```shell
+```
 npm test
 ```
 

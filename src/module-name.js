@@ -1,5 +1,5 @@
 /*!
- * @license es6-module-name
+ * @license module-name
  * (c) sugarshin
  * License: MIT
  */

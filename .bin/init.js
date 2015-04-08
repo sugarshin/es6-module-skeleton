@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 var args = process.argv;
-var pkgJSON = './package.json';
+var pkg = './package.json';
 
 var replaceNames = function(data, name, filePath) {
   var txt = data.replace(/es6-module-skeleton/g, name);
@@ -14,12 +14,12 @@ var replaceNames = function(data, name, filePath) {
   });
 };
 
-fs.readFile(pkgJSON, {encoding: 'utf-8'}, function(err, data) {
+fs.readFile(pkg, {encoding: 'utf-8'}, function(err, data) {
   if (err) {
     console.error(err);
   } else {
-    replaceNames(data, args[2], pkgJSON);
+    replaceNames(data, args[2], pkg);
   }
 });
 
-fs.rename('./src/es6-module-name.js', './src/' + args[2] + '.js');
+fs.rename('./src/module-name.js', './src/' + args[2] + '.js');

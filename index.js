@@ -1,3 +1,3 @@
 "use strict";
 
-module.exports = require('./lib/es6-module-name');
+module.exports = require('./lib/module-name');
