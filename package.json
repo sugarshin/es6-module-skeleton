@@ -15,12 +15,12 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint src/es6-module-skeleton.js",
+    "lint": "eslint src/",
     "test": "mocha --compilers js:espower-babel/guess test/**/*.js",
-    "compile": "babel src/es6-module-skeleton.js -o lib/es6-module-skeleton.js",
-    "build-standalone": "browserify src/es6-module-skeleton.js -t babelify -s ModuleSkeleton | derequire > build/es6-module-skeleton.js",
-    "build-min": "uglifyjs build/es6-module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/es6-module-skeleton.min.js",
-    "build": "npm run lint && npm run compile && npm run build-standalone && npm run build-min"
+    "compile": "babel -d lib/ src/",
+    "standalone": "browserify src/es6-module-skeleton.js -t babelify -s ModuleSkeleton | derequire > build/es6-module-skeleton.js",
+    "minify": "uglifyjs build/es6-module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/es6-module-skeleton.min.js",
+    "build": "npm ru lint && npm ru compile && npm ru standalone && npm ru minify"
   },
   "engines": {
     "node": "0.12.x"
