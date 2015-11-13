@@ -4,8 +4,6 @@
  * License: MIT
  */
 
-"use strict";
-
 import deps from 'deps';
 
 export default class ModuleName {

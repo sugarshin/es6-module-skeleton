@@ -21,6 +21,7 @@ sh .bin/init.sh module-name
 ---
 
 [![Build Status][travis-image]][travis-url]
+[![Dependency Status](david-image)][david-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![GitHub version][github-ver-image]][github-ver-url]
 [![License][license-image]][license-url]
@@ -82,6 +83,8 @@ npm test
 [bower-url]: http://bower.io/search/?q=es6-module-skeleton
 [travis-image]: http://img.shields.io/travis/sugarshin/es6-module-skeleton/master.svg?branch=master
 [travis-url]: https://travis-ci.org/sugarshin/es6-module-skeleton
+[david-image]: https://david-dm.org/sugarshin/es6-module-skeleton.svg
+[david-url]: https://david-dm.org/sugarshin/es6-module-skeleton
 [gratipay-image]: http://img.shields.io/gratipay/sugarshin.svg
 [gratipay-url]: https://gratipay.com/sugarshin/
 [coveralls-image]: https://coveralls.io/repos/sugarshin/es6-module-skeleton/badge.svg

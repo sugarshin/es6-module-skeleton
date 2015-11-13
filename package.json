@@ -9,21 +9,13 @@
   "main": "index.js",
   "files": [
     "lib",
-    "index.js",
-    "test",
-    "package.json",
-    "README.md"
+    "index.js"
   ],
   "scripts": {
-    "lint": "eslint src/",
+    "lint": "eslint src",
     "test": "mocha --compilers js:espower-babel/guess test/**/*.js",
-    "compile": "babel -d lib/ src/",
-    "standalone": "browserify src/es6-module-skeleton.js -t babelify -s ModuleSkeleton | derequire > build/es6-module-skeleton.js",
-    "minify": "uglifyjs build/es6-module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/es6-module-skeleton.min.js",
-    "build": "npm ru lint && npm ru compile && npm ru standalone && npm ru minify"
-  },
-  "engines": {
-    "node": "0.12.x"
+    "compile": "babel -d lib --presets es2015 src",
+    "build": "npm run lint && npm run compile"
   },
   "author": "sugarshin",
   "license": "MIT"

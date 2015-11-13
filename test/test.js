@@ -1,7 +1,7 @@
 import assert from 'power-assert';
 import deps from 'deps';
 
-import ModuleName from '../';
+import ModuleName from '..';
 
 describe('ModuleName', () => {
   describe('.test()', () => {
