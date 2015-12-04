@@ -21,7 +21,8 @@ sh .bin/init.sh module-name
 ---
 
 [![Build Status][travis-image]][travis-url]
-[![Dependency Status](david-image)][david-url]
+[![Dependency Status][david-image]][david-url]
+[![Devdependency Status][david-dev-image]][david-dev-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![GitHub version][github-ver-image]][github-ver-url]
 [![License][license-image]][license-url]
@@ -40,17 +41,6 @@ import ModuleName from 'module-name';
 new ModuleName(opts);
 ```
 
-### Config
-
-default options
-
-```js
-// default
-{
-  prop: 'val'
-}
-```
-
 ## API
 
 ### `m.method()`
@@ -64,12 +54,6 @@ Method
 3. Commit your changes: git commit -am 'Add some feature'
 4. Push to the branch: git push origin my-new-feature
 5. Submit a pull request :D
-
-## Test
-
-```
-npm test
-```
 
 ## License
 
@@ -85,6 +69,8 @@ npm test
 [travis-url]: https://travis-ci.org/sugarshin/es6-module-skeleton
 [david-image]: https://david-dm.org/sugarshin/es6-module-skeleton.svg
 [david-url]: https://david-dm.org/sugarshin/es6-module-skeleton
+[david-dev-image]: https://david-dm.org/sugarshin/es6-module-skeleton/dev-status.svg
+[david-dev-url]: https://david-dm.org/sugarshin/es6-module-skeleton#info=devDependencies
 [gratipay-image]: http://img.shields.io/gratipay/sugarshin.svg
 [gratipay-url]: https://gratipay.com/sugarshin/
 [coveralls-image]: https://coveralls.io/repos/sugarshin/es6-module-skeleton/badge.svg
@@ -94,4 +80,3 @@ npm test
 [license-image]: http://img.shields.io/:license-mit-blue.svg
 [license-url]: http://sugarshin.mit-license.org/
 [downloads-image]: http://img.shields.io/npm/dm/es6-module-skeleton.svg
-[dependencies-image]: http://img.shields.io/david/sugarshin/es6-module-skeleton.svg
